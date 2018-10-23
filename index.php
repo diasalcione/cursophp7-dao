@@ -26,7 +26,7 @@ $aluno = new Usuario("aluno", "@lun0");
 $aluno->insert();
 echo $aluno;
 */
-
+/*
 //Alterar um usuário
 $usuario = new Usuario();
 
@@ -35,7 +35,7 @@ $usuario->loadById(8);
 $usuario->update("professor", "!@#$%¨&*");
 
 echo $usuario;
-
+*/
 
 //$usuario = new Usuario();
 
@@ -55,6 +55,11 @@ echo $usuario;
 //$aluno-> insert();
 //echo $aluno;
 
+// Excluindo um novo usuário
+$usuario = new Usuario();
+$usuario -> loadById(5);
+$usuario->delete();
+echo $usuario;
 
 
  ?>
